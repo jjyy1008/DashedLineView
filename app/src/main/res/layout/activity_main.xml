@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    tools:context="com.xyan.dotlineviewdemo.MainActivity">
+
+    <com.xyan.dotlineview.DashedLineView
+        android:background="#c9c9c9"
+        android:padding="10dp"
+        android:id="@+id/dotted_line_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:dlv_dashed_color="#0f0"
+        app:dlv_gap_length="4dp"
+        app:dlv_line_orientation="vertical"
+        app:dlv_solid_length="6dp"
+        app:dlv_stroke_width="3dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.xyan.dotlineview.DashedLineView
+            android:background="#d6a1a1"
+            android:id="@+id/dotted_line_hori"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:dlv_dashed_color="#ff2b00"
+            app:dlv_gap_length="5dp"
+            app:dlv_line_orientation="horizontal"
+            app:dlv_solid_length="4dp"
+            app:dlv_stroke_width="3dp" />
+
+
+        <Button
+            android:id="@+id/btn"
+            android:text="Change color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.xyan.dotlineview.DashedLineView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/dotted_line_vertical_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:dlv_dashed_color="#1eb76b"
+            app:dlv_gap_length="8dp"
+            app:dlv_line_orientation="vertical"
+            app:dlv_solid_length="6dp"
+            app:dlv_stroke_width="2dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
